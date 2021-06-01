@@ -1,0 +1,2 @@
+# decal
+Static front end
