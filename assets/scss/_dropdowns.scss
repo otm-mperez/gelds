@@ -1,0 +1,14 @@
+#accountMenu, #messagesList {
+  background: $deep-blue;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  text-align: right;
+  padding: 5px 10px 10px;
+  font-size: 12px;
+  line-height: 20px;
+
+  a {
+    color: $white;
+  }
+}

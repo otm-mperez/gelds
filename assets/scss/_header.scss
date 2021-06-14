@@ -1,0 +1,264 @@
+#top-header {
+  flex-basis: 100%;
+  background: $top-nav-bg;
+  height: $top-nav-height;
+
+  .content {
+    @extend .content-wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .divider {
+    color: $white;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+#site-header {
+  background: $header-bg;
+  height: $site-nav-height;
+
+  button {
+    background: transparent;
+    border: none;
+    color: $white;
+    font-family: $heading-text;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .content {
+    @extend .content-wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media screen and (max-width: $tablet) {
+      align-items: center;
+      height: 100%;
+
+      >.social-links {
+        display: none;
+      }
+    }
+  }
+
+  .message-count {
+    position: absolute;
+    background: $red;
+    border-radius: 50px;
+    padding: 2px 4px 3px;
+    min-width: 14px;
+    font-size: 7px;
+    top: -5px;
+    margin-left: -9px;
+    font-weight: bold;
+  }
+
+  .dropdown-toggle {
+    &:after {
+      display: none;
+    }
+  }
+
+  .account-controls {
+    max-width: $desktop;
+    display: flex;
+    margin: -27px 20px 0 10px;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  .account {
+    margin-right: 15px;
+    font-size: 12px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media screen and (max-width: $tablet) {
+      margin: -3px 30px 0 0;
+      position: relative;
+      right: auto;
+    }
+
+    a {
+      text-decoration: none;
+      vertical-align: middle;
+      margin-left: 3px;
+      color: $white;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: $tablet) {
+        font-size: 14px;
+      }
+    }
+
+    img {
+      border-radius: 50px;
+      border: 2px solid $white;
+      height: 20px;
+      width: 20px;
+      margin-top: -2px;
+    }
+    svg, span {
+      margin-left: 2px;
+    }
+  }
+
+  // site-header tablet
+  @media screen and (max-width: $tablet) {
+    height: $site-nav-height;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+
+    .logo {
+      margin-right: auto;
+      top: 0;
+    }
+  }
+
+  // site-header mobile
+  @media screen and (max-width: $mobile) {
+    .button-name {
+      display: none;
+    }
+  }
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  margin-top: -28px;
+
+  &:after {
+    @include font-size(1.6);
+    content: "|";
+    color: $white;
+    margin-left: 10px;
+  }
+
+  li {
+    margin: 0 5px;
+  }
+
+  .social:hover {
+    #facebook path {
+      fill: lighten($facebook-color, 25%);
+    }
+    #twitter path {
+      fill: lighten($twitter-color, 25%);
+    }
+    #youtube path {
+      fill: lighten($youtube-color, 25%);
+    }
+    #instagram path {
+      fill: lighten($instagram-color, 25%);
+    }
+    #pinterest path {
+      fill: lighten($pinterest-color, 25%);
+    }
+    #linkedin path {
+      fill: lighten($linkedin-color, 25%);
+    }
+  }
+}
+
+// Site Nav - desktop only
+.site-nav {
+  @extend .content-wrap;
+  height: $site-nav-height;
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+// Mobile Nav - for tablet/mobile
+.mobile-nav {
+  display: none;
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.logo {
+  position: relative;
+  top: -20px;
+  width: 150px;
+  margin-right: auto;
+
+  img {
+    height: 85px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    top: 5px;
+
+    img {
+      height: 60px;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+  .site-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+
+    li {
+      margin: 0 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+        border-bottom: 3px solid $light-blue;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .site-search {
+    input[type=text] {
+      padding: 5px 15px;
+      border: none;
+      border-radius: 50px;
+      margin-left: 10px;
+    }
+  }

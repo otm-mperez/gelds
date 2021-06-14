@@ -1,0 +1,51 @@
+.minicart {
+  // position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  table {
+    width: 100%;
+  }
+  thead {
+    background: $deep-blue;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    th {
+      text-align: left;
+      padding: 5px 15px;
+      font-weight: 400;
+    }
+  }
+  tbody {
+
+    td {
+      @include font-size(1.4);
+      text-align: left;
+      padding: 0 15px;
+    }
+    tr td:last-child {
+      text-align: right;
+    }
+    tr:last-child td {
+      padding-bottom: 15px;
+    }
+    .para-title {
+      text-align: left !important;
+      column-span: all;
+      font-weight: 600;
+      padding-top: 10px;
+    }
+  }
+
+  tfoot {
+
+    td {
+      text-align: right;
+      padding: 10px 15px 20px;
+      border-top: 1px solid $light-gray;
+    }
+  }
+}

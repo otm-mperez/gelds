@@ -1,0 +1,95 @@
+// -------------------------------------------------------------------------- //
+//  VARIABLES                                                                 //
+// -------------------------------------------------------------------------- //
+
+// Brand Colors
+// ------------------------------------------------------ /
+$black:        #222222;
+$white:        #FFFFFF;
+$off-white:    #F5F5F5;
+$red:          #FF5959;
+$red-dark:     #910048;
+$light-gray:   #CCCCCC;
+$medium-gray:  #767676;
+$charcoal:     #424242;
+$dark-blue:    #002D72;
+$darker-blue:  #00173B;
+$deep-blue:    #144CA3;
+$medium-blue:  #2960B5;
+$light-blue:   #4B91FF;
+$lighter-blue: #83B2FF;
+$blue-gray:    #A5C8FF;
+$orange:       #FFBD41;
+$dark-orange:  #F5961B;
+$green:        #78BE21;
+$green-dark:   darken($green, 10%);
+
+
+// Social
+$facebook-color:  #4267B2;
+$twitter-color:   #1DA1F2;
+$youtube-color:   #FF0000;
+$instagram-color: #405DE6;
+$pinterest-color: #BD081C;
+$linkedin-color:  #2867B2;
+
+
+
+// Components
+// ------------------------------------------------------ /
+$bg-light:         $off-white;
+$disclaimer:       #808285;
+
+$top-nav-height:   30px;
+$site-nav-height:  70px;
+$header-height:    100px;
+$prefooter-height: 100px;
+$footer-height:    250px; // 150px base footer + prefooter
+
+$top-nav-bg:       $deep-blue;
+$header-bg:        $dark-blue;
+$prefooter-bg:     $off-white;
+$footer-bg:        $dark-blue;
+
+$link-color:       $light-blue;
+$link-hover:       $medium-blue;
+
+
+// Fonts
+// ------------------------------------------------------ /
+$heading-text:    'Gotham', sans-serif;
+$body-text:       'Raleway', sans-serif;
+$body-color:      $charcoal;
+
+
+// Breakpoints
+// ------------------------------------------------------ /
+
+$lg-desktop:  1400px;
+$desktop:     1200px;
+$lg-tablet:   960px;
+$tablet:      800px;
+$mobile:      560px;
+$sm-mobile:   400px;
+
+
+// Contained Width
+// ------------------------------------------------------ /
+$main-width:  1040px;
+
+
+// Grid
+// ------------------------------------------------------ /
+$col1:        5.835%;
+$col2:        14.39%;
+$col3:        22.95%;
+$col4:        31.51%;
+$col5:        40.07%;
+$col6:        48.63%;
+$col7:        57.19%;
+$col8:        65.75%;
+$col9:        74.31%;
+$col10:       82.87%;
+$col11:       91.43%;
+$col12:       100%;
+$col-margin:  2.725%;
