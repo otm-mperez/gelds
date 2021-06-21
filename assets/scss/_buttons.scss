@@ -1,0 +1,39 @@
+/* -------------------------------------------------------------------------- */
+/*  BUTTONS                                                                   */
+/* -------------------------------------------------------------------------- */
+
+button, .button {
+  background: $button-color;
+  border: 3px solid $button-color;
+  color: $white;
+  padding: 10px 20px;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background: $button-hover;
+    border-color: $button-hover;
+    color: $white;
+  }
+}
+
+button.alt, .button-alt {
+  @extend .button;
+  background: $white;
+  color: $button-color;
+
+  &:hover {
+    background: $white;
+    color: $button-hover;
+    border-color: $button-hover;
+  }
+}
+
+.button-group {
+  margin-top: 15px;
+  button {
+    margin-right: 10px;
+  }
+}

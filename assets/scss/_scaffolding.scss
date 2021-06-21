@@ -1,6 +1,6 @@
-// -------------------------------------------------------------------------- //
-//  SCAFFOLDING                                                               //
-// -------------------------------------------------------------------------- //
+/* -------------------------------------------------------------------------- */
+/*  SCAFFOLDING                                                               */
+/* -------------------------------------------------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -24,59 +24,6 @@ body {
     @include font-size(1.4);
   }
 }
-
-.content-wrap {
-  position: relative;
-  max-width: $desktop;
-  margin: 0 auto;
-
-  @media screen and (max-width: $desktop) {
-    margin: 0 15px;
-  }
-}
-
-.page-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-basis: 100%;
-  align-items: baseline;
-  border-bottom: 3px solid $charcoal;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-
-  .location {
-    @extend .small;
-  }
-
-  @media (max-width: $mobile) {
-    flex-direction: column;
-    padding-bottom: 15px;
-
-    .location {
-      margin-top: 30px;
-    }
-  }
-
-}
-
-p + p {
-  margin-bottom: 15px;
-}
-
-nav {
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	li {
-		margin: 0;
-		padding: 0;
-	}
-}
-
 main {
   @include clearfix;
   @extend .content-wrap;
@@ -95,7 +42,6 @@ main {
     height: auto;
   }
 }
-
 article {
   width: 59.5%;
   height: 200vh;
@@ -109,7 +55,6 @@ article {
     padding: 0;
   }
 }
-
 aside {
   width: 40%;
   height: 90vh;
@@ -124,130 +69,34 @@ aside {
     display: none;
   }
 }
-
-.uppercase {
-  text-transform: uppercase;
-  font-size: 90%;
-}
-
-
-// PRODUCTS
-.product {
-  letter-spacing: 0;
+.content-wrap, .container {
   position: relative;
-  height: 150px;
-  width: 100%;
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 0 0 20px 0;
+  max-width: $desktop;
+  margin: 0 auto;
 
-  &:hover {
-    border-color: $deep-blue !important;
-  }
-
-  a.small-link {
-    @include font-size(1.2);
-    font-weight: 400;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    color: $charcoal;
-  }
-
-  &.selected {
-    background: $lighter-blue;
-    border-color: $lighter-blue;
-  }
-
-  .disclaimer {
-    color: $body-color;
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
+  @media screen and (max-width: $desktop) {
+    margin: 0 15px;
   }
 }
-
-.data-plan-name {
-  @include font-size(1.8);
-  font-weight: 600;
-  color: $deep-blue;
+.container {
+  border: 1px solid $light-gray;
+  padding: 30px;
+  margin: 60px auto;
+  width: 500px;
 }
-.product-name {
-  @include font-size(2.4);
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 5px;
-
-  @media screen and (max-width: $tablet) {
-    @include font-size(1.8);
-  }
-}
-.product-price {
-  @include font-size(1.1);
-  line-height: 12px;
+.page-header {
   display: flex;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 100%;
+  align-items: baseline;
+  border-bottom: 3px solid $charcoal;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
 
-  .sign {
-    @include font-size(1.8);
-    font-weight: bold;
-    margin-top: -3px;
-  }
-  .dollars {
-    @include font-size(4);
-    font-weight: bold;
-    margin-top: 3px;
-  }
-  .cents {
-    @include font-size(2);
-    font-weight: bold;
-    margin-top: -3px;
-  }
-}
-.monthly-estimate {
-  font-weight: 600;
-  color: $deep-blue;
-}
-.discount {
-  &:before {
-    content: url('assets/img/icon-tag.svg');
-    vertical-align: top;
-  }
-}
-
-// Additional Options
-.additional-options {
-  margin-top: 20px;
-  >div {
-    margin-bottom: 25px;
-  }
-  .price {
-    font-weight: 400;
-    margin: 5px 0;
-  }
-  select {
-    min-width: 170px;
-    padding: 5px;
-  }
-}
-.small-link {
-    display: block;
-    color: $charcoal;
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-
-
-// Cover Page
-.cover-page {
-  display: block;
-  margin: 175px auto 50px;
-
-  .links {
-    margin: 50px 23px 30px;
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding-bottom: 15px;
   }
 }

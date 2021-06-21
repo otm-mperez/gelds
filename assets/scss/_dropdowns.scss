@@ -1,3 +1,7 @@
+/* -------------------------------------------------------------------------- */
+/*  DROPDOWNS                                                                 */
+/* -------------------------------------------------------------------------- */
+
 #accountMenu, #messagesList {
   background: $deep-blue;
   width: 100%;
@@ -10,5 +14,20 @@
 
   a {
     color: $white;
+  }
+}
+
+.dropdown-menu {
+  background: $deep-blue;
+  margin-top: 10px;
+  border-radius: 0;
+  padding: 15px;
+
+  &:before {
+    content: '';
+    @include triangle(up, 10px, $color:$deep-blue);
+    position: absolute;
+    top: -10px;
+    right: 20%;
   }
 }

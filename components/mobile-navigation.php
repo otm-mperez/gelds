@@ -2,7 +2,7 @@
 <nav class="mobile-nav">
   <div class="navigation">
     <!-- Menu -->
-    <div class="dropdown menu">
+    <div class="dropdown">
       <!-- Menu Toggle -->
       <button
         type="button"
@@ -17,11 +17,9 @@
       </button>
       <!-- Menu Items -->
       <div class="dropdown-menu" id="mobileMenu">
-        <div class="mobile-links">
-          <?php include "components/site-links.php"; ?>
-          <?php include "components/site-search.php"; ?>
-          <?php include "components/social-links.php"; ?>
-        </div>
+        <?php include "components/site-links.php"; ?>
+        <?php include "components/site-search.php"; ?>
+        <?php include "components/social-links.php"; ?>
       </div>
     </div>
   </div>

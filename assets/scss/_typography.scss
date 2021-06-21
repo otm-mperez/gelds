@@ -1,6 +1,6 @@
-  // -------------------------------------------------------------------------- //
-//  TYPOGRAPHY                                                                //
-// -------------------------------------------------------------------------- //
+/* -------------------------------------------------------------------------- */
+/*  TYPOGRAPHY                                                                */
+/* -------------------------------------------------------------------------- */
 
 .light {
   font-weight: 300 !important;
@@ -24,12 +24,13 @@
   color: $dark-blue;
   font-weight: bold;
 }
-.cta-title {
+.alt-title {
   @include font-size(3.0);
   font-family: $heading-text;
   font-weight: 300;
+  color: $deep-blue;
 }
-.subtitle {
+.sub-title {
   @include font-size(2);
   font-family: $heading-text;
   font-weight: 700;
@@ -41,14 +42,14 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
+.para-title {
+  @include font-size(1.6);
+  font-weight: 600;
+}
 .small {
   @include font-size(1.4);
   font-family: $body-text;
   font-weight: 300;
-}
-.para-title {
-  @include font-size(1.6);
-  font-weight: 600;
 }
 .disclaimer {
   @include font-size(1.15);
@@ -56,4 +57,11 @@
   line-height: 18px;
   font-style: italic;
   color: $disclaimer;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+p + p {
+  margin-bottom: 15px;
 }
