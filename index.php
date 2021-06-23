@@ -3,7 +3,7 @@
       <h1 class="title">Navigation Links</h1>
       <h3>Website</h3>
       <ul class="links">
-        <li><a href="home.php">Home</a></li>
+        <li><a href="./home.php">Home</a></li>
       </ul>
 
       <h3>Portal</h3>

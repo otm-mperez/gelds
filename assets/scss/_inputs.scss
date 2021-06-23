@@ -7,6 +7,10 @@ input, select {
   border: 1px solid $light-gray;
   width: 80%;
   font-family: $body-text;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }
 input[type="checkbox"] {
   display: inline-block;

@@ -5,9 +5,12 @@
 footer {
   font-family: $heading-text;
   background: $dark-blue;
-  // height: $footer-height;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: $tablet) {
+    height: auto;
+  }
 
   .pre {
     background: $off-white;
@@ -31,6 +34,8 @@ footer {
 
       img {
         mix-blend-mode: multiply;
+        max-width: 160px;
+        max-height: 70px;
       }
     }
   }
@@ -54,14 +59,6 @@ footer {
       margin-top: 10px !important;
     }
   }
-
-  // .content {
-  //   @extend .content-wrap;
-  //   color: $white;
-  //   position: relative;
-  //   z-index: 1;
-  // }
-
   .footer-links {
     @extend .content-wrap;
     color: $white;
@@ -76,26 +73,10 @@ footer {
     li {
       margin-right: 15px;
     }
-
-    // li {
-    //   &:after {
-    //     content: "|";
-    //     padding: 0 5px;
-    //   }
-    //   &:last-child {
-    //     &:after {
-    //       content: "";
-    //     }
-    //   }
-    // }
   }
-
   .copyright {
     @extend .content-wrap;
     font-family: $heading-text;
-  }
-
-  @media screen and (max-width: $tablet) {
-    height: auto;
+    font-weight: bold;
   }
 }

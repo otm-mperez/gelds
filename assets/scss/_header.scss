@@ -44,6 +44,7 @@
     font-family: $heading-text;
     text-transform: uppercase;
     position: relative;
+    padding: 0;
   }
 
   .content {
@@ -67,10 +68,11 @@
     position: absolute;
     background: $red;
     border-radius: 50px;
-    padding: 2px 4px 3px;
-    min-width: 14px;
-    font-size: 7px;
-    top: -5px;
+    padding: 4px 3px;
+    min-width: 17px;
+    font-size: 9px;
+    line-height: 1;
+    top: 0px;
     margin-left: -9px;
     font-weight: bold;
   }
@@ -88,20 +90,26 @@
 
     @media screen and (max-width: $tablet) {
       margin: 0;
+
+      &.logged-in {
+        padding-right: 2em;
+      }
     }
   }
 
   .account {
     margin-right: 15px;
     font-size: 12px;
-    // margin-top: 3px;
     text-transform: uppercase;
     font-weight: bold;
 
-    @media screen and (max-width: $tablet) {
+    @media (max-width: $tablet) {
       margin: 0 10px 0 0;
       position: relative;
       right: auto;
+    }
+    @media (max-width: $mobile) {
+      margin: 0 20px 0 0;
     }
 
     a {
@@ -129,6 +137,9 @@
     svg, span {
       margin-left: 2px;
     }
+    svg {
+      margin-top: -3px;
+    }
   }
 
   // site-header tablet
@@ -155,10 +166,10 @@
 .social-links {
   list-style: none;
   display: flex;
-  margin-top: -28px;
+  margin-top: -27px;
 
   &:after {
-    @include font-size(1.6);
+    @include font-size(2);
     content: "|";
     color: $white;
     margin-left: 10px;
@@ -235,7 +246,7 @@
   margin-right: auto;
 
   img {
-    height: 85px;
+    height: 75px;
   }
 
   @media screen and (max-width: $tablet) {
@@ -277,16 +288,27 @@
 
   .site-search {
     position: relative;
+
     input[type=text] {
       padding: 5px 15px;
       border: none;
       border-radius: 50px;
       margin-left: 10px;
+      width: 90%;
+
+      @media (max-width: $tablet) {
+        margin: 0;
+        width: 100%;
+      }
     }
     button {
       position: absolute !important;
-      top: -5px;
+      top: 4px;
       right: 20px;
       z-index: 1;
+
+      @media (max-width: $tablet) {
+        // right: 0;
+      }
     }
   }

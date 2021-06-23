@@ -2,9 +2,12 @@
 /*  DROPDOWNS                                                                 */
 /* -------------------------------------------------------------------------- */
 
+#accountMenu {
+  width: 100%;
+}
 #accountMenu, #messagesList {
   background: $deep-blue;
-  width: 100%;
+  min-width: 140px;
   border-radius: 0;
   border: none;
   text-align: right;
@@ -16,18 +19,28 @@
     color: $white;
   }
 }
+#messagesList.show {
+  transform: translate(-80%, 25px) !important;
+}
 
 .dropdown-menu {
+  @include font-size(1.2);
   background: $deep-blue;
-  margin-top: 10px;
+  border-top: 1px solid $dark-blue;
   border-radius: 0;
   padding: 15px;
+  min-width: 210px;
 
-  &:before {
-    content: '';
-    @include triangle(up, 10px, $color:$deep-blue);
-    position: absolute;
-    top: -10px;
-    right: 20%;
+  @media (max-width: $tablet) {
+    margin-top: 20px !important;
+
+    &:before {
+      content: '';
+      @include triangle(up, 10px, $color:$deep-blue);
+      position: absolute;
+      top: -10px;
+      right: 9%;
+    }
   }
+
 }

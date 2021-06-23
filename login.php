@@ -15,7 +15,7 @@
           <input id="login-password" type="password" name="loginPassword" value="" placeholder="Enter Password">
         </div>
 
-        <small><a href="/forgot">Forgot Password?</a></small>
+        <small><a href="./forgot.php">Forgot Password?</a></small>
 
         <div class="form-control">
           <input id="login-panda-check" type="checkbox" name="loginPANDA" value="">
@@ -26,10 +26,10 @@
           <input id="login-prek" type="checkbox" name="loginPrekDirectors" value="">
           <label for="login-prek">Pre-K Directors</label>
         </div>
-
+        
         <div class="button-group">
           <button type="submit" name="loginSubmit">Login</button>
-          <a class="button-alt" href="/">Cancel</a>
+          <a class="button-alt" href="./home.php">Cancel</a>
         </div>
       </form>
     </div>
