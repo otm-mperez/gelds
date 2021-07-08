@@ -2,7 +2,7 @@
   <main>
     <div class="container">
       <h2 class="alt-title">Login</h2>
-      <p>Use your GaPDS credentials to log in or <a target="_blank" href="//gapds.decal.ga.gov">create an account</a></p>
+      <p>Use your GaPDS credentials to log in or <a target="_blank" href="https://gapds.decal.ga.gov/Registration">create an account</a></p>
 
       <form id="login" action="" method="post">
         <div class="form-control">
@@ -15,18 +15,14 @@
           <input id="login-password" type="password" name="loginPassword" value="" placeholder="Enter Password">
         </div>
 
-        <small><a href="./forgot.php">Forgot Password?</a></small>
-
-        <div class="form-control">
-          <input id="login-panda-check" type="checkbox" name="loginPANDA" value="">
-          <label for="login-panda-check">Login with PANDA credentials</label>
-        </div>
+        <small><a href="https://gapds.decal.ga.gov/ForgotLogin" target="_blank">Forgot login information?</a></small>
 
         <div class="form-control">
           <input id="login-prek" type="checkbox" name="loginPrekDirectors" value="">
           <label for="login-prek">Pre-K Directors</label>
+          <span>(Check to login with PANDA credentials)</span>
         </div>
-        
+
         <div class="button-group">
           <button type="submit" name="loginSubmit">Login</button>
           <a class="button-alt" href="./home.php">Cancel</a>

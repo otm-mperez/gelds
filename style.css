@@ -589,6 +589,9 @@ aside {
       width: 100%;
       display: none; } }
 
+hr {
+  margin: -5px 0 25px; }
+
 .content-wrap, main, #top-header .content, #site-header .content, .site-nav, footer .pre .logo-links, footer .footer-links, footer .copyright, .container {
   position: relative;
   max-width: 1200px;
@@ -641,41 +644,52 @@ aside {
   font-style: unset !important; }
 
 .title {
-  font-size: 34px;
-  font-size: 3.4rem;
+  font-size: 32px;
+  font-size: 3.2rem;
   font-family: "Gotham", sans-serif;
   color: #002D72;
-  font-weight: bold; }
+  text-transform: uppercase; }
 
 .alt-title {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 28px;
+  font-size: 2.8rem;
   font-family: "Gotham", sans-serif;
-  font-weight: 600;
   color: #144CA3; }
 
-.sub-title {
-  font-size: 20px;
-  font-size: 2rem;
+.subtitle {
+  font-size: 22px;
+  font-size: 2.2rem;
   font-family: "Gotham", sans-serif;
-  font-weight: 700;
-  color: #222222; }
+  color: #144CA3; }
 
 .section-title {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Gotham", sans-serif;
   font-weight: 600;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #002D72;
+  text-transform: uppercase; }
+
+.subsection-title {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Gotham", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #767676; }
 
 .para-title {
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-weight: 600; }
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: "Gotham", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222222; }
 
 .small {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   font-weight: 300; }
 
@@ -688,8 +702,7 @@ aside {
   color: #808285; }
 
 .uppercase {
-  text-transform: uppercase;
-  font-size: 90%; }
+  text-transform: uppercase; }
 
 p + p {
   margin-bottom: 15px; }
@@ -764,8 +777,9 @@ p + p {
         #site-header .account-controls.logged-in {
           padding-right: 2em; } }
   #site-header .account {
-    margin-right: 15px;
     font-size: 12px;
+    font-size: 1.2rem;
+    margin-right: 15px;
     text-transform: uppercase;
     font-weight: bold; }
     @media (max-width: 800px) {
@@ -969,16 +983,18 @@ footer {
 /* -------------------------------------------------------------------------- */
 /*  BUTTONS                                                                   */
 /* -------------------------------------------------------------------------- */
-button, .button, button.alt, .button-alt {
+button, .button, button.alt, .button-alt, .btn, .btn-primary {
   background: #78BE21;
   border: 3px solid #78BE21;
   color: #FFFFFF;
   padding: 10px 20px;
   text-transform: uppercase !important;
+  font-size: inherit;
   font-weight: bold;
   text-decoration: none;
-  display: inline-block; }
-  button:hover, .button:hover, button.alt:hover, .button-alt:hover {
+  display: inline-block;
+  border-radius: 0; }
+  button:hover, .button:hover, button.alt:hover, .button-alt:hover, .btn:hover, .btn-primary:hover {
     background: #6aa81d;
     border-color: #6aa81d;
     color: #FFFFFF; }
@@ -1040,9 +1056,11 @@ button.alt, .button-alt {
         right: 9%; } }
 
 /* -------------------------------------------------------------------------- */
-/*  INPUTS                                                                    */
+/*  FORMS + INPUTS                                                            */
 /* -------------------------------------------------------------------------- */
 input, select {
+  font-size: 14px;
+  font-size: 1.4rem;
   padding: 10px 15px;
   border: 1px solid #CCCCCC;
   width: 80%;
@@ -1056,16 +1074,37 @@ input[type="checkbox"] {
   width: auto; }
 
 label {
-  font-family: "Gotham", sans-serif; }
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+  color: #767676;
+  text-transform: capitalize; }
 
 label + input {
   display: block; }
 
-.form-control {
+.form-check-label {
+  font-family: "Raleway", sans-serif;
+  color: #424242;
+  font-weight: normal; }
+
+.form-group {
   border: none;
   font-size: unset;
   padding: 0;
-  margin-top: 15px; }
+  margin: 10px 0; }
+
+.form-group + button,
+.form-check + button {
+  margin: 1em 0; }
+
+.form-control {
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+  border-radius: 0; }
+
+.form-check-input {
+  width: 1em !important;
+  height: 1em; }
 
 /* -------------------------------------------------------------------------- */
 /*  LINKS                                                                     */

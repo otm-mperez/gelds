@@ -18,36 +18,46 @@
   font-weight: 700 !important;
   font-style: unset !important;
 }
-.title {
-  @include font-size(3.4);
+.title { //H1
+  @include font-size(3.2);
   font-family: $heading-text;
   color: $dark-blue;
-  font-weight: bold;
+  text-transform: uppercase;
 }
-.alt-title {
-  @include font-size(3.0);
+.alt-title { //H2
+  @include font-size(2.8);
   font-family: $heading-text;
-  font-weight: 600;
   color: $deep-blue;
 }
-.sub-title {
-  @include font-size(2);
+.subtitle { //H3
+  @include font-size(2.2);
   font-family: $heading-text;
-  font-weight: 700;
-  color: $black;
+  color: $deep-blue;
 }
-.section-title {
-  @include font-size(2.4);
+.section-title { //H4
+  @include font-size(1.8);
   font-family: $heading-text;
   font-weight: 600;
   margin-bottom: 20px;
+  color: $dark-blue;
+  text-transform: uppercase;
 }
-.para-title {
-  @include font-size(1.6);
+.subsection-title { //H5
+  @include font-size(1.8);
+  font-family: $heading-text;
   font-weight: 600;
+  margin-bottom: 20px;
+  color: $medium-gray;
+}
+.para-title { //H6
+  @include font-size(1.5);
+  font-family: $heading-text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $black;
 }
 .small {
-  @include font-size(1.4);
+  @include font-size(1.2);
   font-family: $body-text;
   font-weight: 300;
 }
@@ -60,7 +70,6 @@
 }
 .uppercase {
   text-transform: uppercase;
-  font-size: 90%;
 }
 p + p {
   margin-bottom: 15px;

@@ -1,1 +1,52 @@
+/* -------------------------------------------------------------------------- */
+/*  FORMS + INPUTS                                                            */
+/* -------------------------------------------------------------------------- */
 
+input, select {
+  @include font-size(1.4);
+  padding: 10px 15px;
+  border: 1px solid $light-gray;
+  width: 80%;
+  font-family: $body-text;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+label {
+  font-family: $heading-text;
+  font-weight: bold;
+  color: $medium-gray;
+  text-transform: capitalize;
+}
+label + input {
+  display: block;
+}
+.form-check-label {
+  font-family: $body-text;
+  color: $body-color;
+  font-weight: normal;
+}
+.form-group {
+  border: none;
+  font-size: unset;
+  padding: 0;
+  margin: 10px 0;
+}
+.form-group + button,
+.form-check + button {
+  margin: 1em 0;
+}
+.form-control {
+  border: 1px solid $light-gray;
+  padding: 10px;
+  border-radius: 0;
+}
+.form-check-input {
+  width: 1em !important;
+  height: 1em;
+}
