@@ -45,6 +45,7 @@ label + input {
   border: 1px solid $light-gray;
   padding: 10px;
   border-radius: 0;
+  font-size: inherit;
 }
 .form-check-input {
   width: 1em !important;

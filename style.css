@@ -1100,7 +1100,8 @@ label + input {
 .form-control {
   border: 1px solid #CCCCCC;
   padding: 10px;
-  border-radius: 0; }
+  border-radius: 0;
+  font-size: inherit; }
 
 .form-check-input {
   width: 1em !important;

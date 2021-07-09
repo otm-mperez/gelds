@@ -39,31 +39,7 @@
       <!-- Sample Components -->
       <h2 class="alt-title">Components in Progress</h2>
 
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Mobile Menu</button>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          ...
-        </div>
-      </div>
-
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Mobile Menu</button>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          ...
-        </div>
-      </div>
-
-
+        <h3 class="section-title">Breadcrumbs</h3>
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -86,14 +62,14 @@
           </ol>
         </nav>
 
-
+        <h3 class="section-title">Tooltip</h3>
         <!-- Tooltip -->
-
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
           Tooltip with HTML
         </button>
 
 
+        <h3 class="section-title">Modal</h3>
         <!-- Button - Trigger Modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Launch demo modal
@@ -118,9 +94,8 @@
           </div>
         </div>
 
-
+        <h3 class="section-title">Accordion</h3>
         <!-- Accordion -->
-
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -161,7 +136,7 @@
         </div>
 
 
-
+        <h3 class="section-title">Dropdown</h3>
         <!-- Dropdown -->
         <ul class="nav">
           <li class="nav-item dropdown">
@@ -181,7 +156,6 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-
 
 
 
