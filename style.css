@@ -1101,7 +1101,8 @@ label + input {
   border: 1px solid #CCCCCC;
   padding: 10px;
   border-radius: 0;
-  font-size: inherit; }
+  font-size: inherit;
+  height: auto; }
 
 .form-check-input {
   width: 1em !important;
