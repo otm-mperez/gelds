@@ -13,3 +13,12 @@ nav {
 		padding: 0;
 	}
 }
+.link-list {
+	list-style: none;
+	margin: 0;
+	border: 1px solid $light-gray;
+	padding: 20px;
+	 li {
+		 margin-bottom: 10px;
+	 }
+}

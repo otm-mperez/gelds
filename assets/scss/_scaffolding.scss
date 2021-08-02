@@ -32,11 +32,15 @@ main {
   background: $white;
   position: relative;
   // enables sticky to work
-  // margin-top: $header-height;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
+  margin-top: $header-height;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: row-reverse;
+  }
 
   img {
     max-width: 100%;
@@ -45,13 +49,13 @@ main {
 }
 article {
   width: 59.5%;
-  height: 200vh;
+  // height: 200vh;
   min-height: 800px;
   display: flex;
   flex-direction: column;
   padding-right: 6%;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     width: 100%;
     padding: 0;
   }
@@ -64,10 +68,15 @@ aside {
   position: -webkit-sticky;
   position: sticky;
   top: calc(115px + 1.5%); //header height + padding
+  padding-top: 5px;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     width: 100%;
-    display: none;
+    position: static;
+  }
+
+  section + section {
+    margin-top: 3em;
   }
 }
 hr {

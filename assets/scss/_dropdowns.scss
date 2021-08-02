@@ -42,5 +42,13 @@
       right: 9%;
     }
   }
+}
 
+main {
+  .dropdown-menu {
+    background: $white;
+  }
+  .dropdown-item:hover {
+    background: $white;
+  }
 }

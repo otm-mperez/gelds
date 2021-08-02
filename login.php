@@ -5,20 +5,20 @@
       <p>Use your GaPDS credentials to log in or <a target="_blank" href="https://gapds.decal.ga.gov/Registration">create an account</a></p>
 
       <form id="login" action="" method="post">
-        <div class="form-control">
+        <div>
           <label for="login-username">Username</label>
-          <input id="login-username" type="text" name="loginUsername" value="" placeholder="Enter Username">
+          <input class="form-control" id="login-username" type="text" name="loginUsername" value="" placeholder="Enter Username">
         </div>
 
-        <div class="form-control">
+        <div>
           <label for="login-password">Password</label>
-          <input id="login-password" type="password" name="loginPassword" value="" placeholder="Enter Password">
+          <input class="form-control" id="login-password" type="password" name="loginPassword" value="" placeholder="Enter Password">
         </div>
 
         <small><a href="https://gapds.decal.ga.gov/ForgotLogin" target="_blank">Forgot login information?</a></small>
 
-        <div class="form-control">
-          <input id="login-prek" type="checkbox" name="loginPrekDirectors" value="">
+        <div>
+          <input class="form-control" id="login-prek" type="checkbox" name="loginPrekDirectors" value="">
           <label for="login-prek">Pre-K Directors</label>
           <span>(Check to login with PANDA credentials)</span>
         </div>
