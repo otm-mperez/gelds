@@ -1,15 +1,18 @@
 <?php include "components/header.php"; ?>
     <main>
       <article class="activity-detail">
-        <!-- <div class="link-group activity-actions">
-          <a href="#">Print</a>
-          <a href="#">Save to Favorites</a>
-        </div> -->
         <section>
           <div class="content">
             <h1 class="title">The Wheels on the Bus</h1>
+
+            <div class="link-group activity-actions">
+              <a class="print" href="#"><?= file_get_contents("./assets/img/icon-printer.svg"); ?> Print</a>
+              <a class="favorite" href="#"><?= file_get_contents("./assets/img/icon-favorite.svg"); ?> Save to Favorites</a>
+            </div>
+
             <!-- Short Desc -->
             <p>Short activity description.</p>
+
             <!-- Activity Attributes -->
             <ul class="attributes">
               <li>
@@ -33,11 +36,14 @@
                 <span class="value">Outside</span>
               </li>
             </ul>
+
             <!-- Long Desc -->
             <p>Here is the long, very long description</p>
+
             <!-- Materials -->
             <h2 class="subtitle">Materials</h2>
             <p>This is space for displaying the materials</p>
+
             <!-- Media -->
             <h2 class="subtitle">Media</h2>
             <p>This is space for displaying any media (photos, videos, etc.)</p>

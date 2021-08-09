@@ -26,17 +26,16 @@ body {
 }
 main {
   @include clearfix;
-  @extend .content-wrap;
+  // @extend .content-wrap;
+  // padding: 40px 0 60px;
   margin: 0 auto;
-  padding: 40px 0 60px;
   background: $white;
   position: relative;
   // enables sticky to work
-  margin-top: $header-height;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // margin-top: $header-height;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
 
   @media screen and (max-width: $tablet) {
     flex-direction: row-reverse;
@@ -50,7 +49,7 @@ main {
 article {
   width: 59.5%;
   // height: 200vh;
-  min-height: 800px;
+  // min-height: 800px;
   display: flex;
   flex-direction: column;
   padding-right: 6%;
@@ -91,6 +90,27 @@ hr {
     margin: 0 15px;
   }
 }
+.content {
+  width: 100%; /* full-width by default */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  &.centered {
+    text-align: center;
+  }
+  &.left {
+    text-align: left;
+  }
+
+  @media (max-width: $lg-tablet) {
+    width: 90%;
+  }
+
+  &.contained {
+    max-width: 800px;
+  }
+}
 .container {
   border: 1px solid $light-gray;
   padding: 30px;
@@ -101,6 +121,7 @@ hr {
     width: 100%;
   }
 }
+
 .page-header {
   display: flex;
   flex-direction: row;

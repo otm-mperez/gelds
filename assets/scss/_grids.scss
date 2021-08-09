@@ -1,0 +1,19 @@
+.col-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+
+  li {
+    width: 40%;
+    margin: 0 15px 30px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  a {
+    display: block;
+    padding: 30px;
+  }
+}

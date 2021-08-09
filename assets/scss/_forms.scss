@@ -16,15 +16,42 @@ input, select {
 input[type="checkbox"] {
   display: inline-block;
   width: auto;
+  vertical-align: text-bottom;
 }
 label {
   font-family: $heading-text;
   font-weight: bold;
   color: $medium-gray;
   text-transform: capitalize;
+  vertical-align: text-bottom;
 }
 label + input {
   display: block;
+}
+form {
+  > div {
+    margin-bottom: 15px;
+
+    > span {
+        vertical-align: text-bottom;
+    }
+  }
+  > small {
+    margin: -10px 0 20px;
+    display: block;
+  }
+
+  header {
+    background: $deep-blue;
+    color: $white;
+    position: relative;
+
+    .form-actions {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
 }
 .form-check-label {
   font-family: $body-text;

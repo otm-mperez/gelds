@@ -1,13 +1,22 @@
 <?php include "components/header.php"; ?>
   <main>
-    <section>
-      <div class="container">
-        <h2 class="alt-title">Login</h2>
-        <p>Use your GaPDS credentials to log in or <a target="_blank" href="https://gapds.decal.ga.gov/Registration">create an account</a></p>
+    <div class="container">
+      <form id="login" action="" method="post">
+        <header class="form-header">
+          <h2 class="alt-title">Edit Profile</h2>
+          <div class="form-actions">
+            <a class="video-tutorial" href="#"><?= file_get_contents("./assets/img/icon-video-tutorial.svg"); ?></a>
+            <a class="info" href="#"><?= file_get_contents("./assets/img/icon-info.svg"); ?></a>
+          </div>
+        </header>
+        <section class="non-editable-fields">
+          <p>GaPDS # <span class="account-number">00202105</span></p>
+          <p><strong>To update this information, please login to your <a target="_blank" href="https://gapds.decal.ga.gov/Registration">GaPDS account</a></strong></p>
+        </section>
 
-        <form id="login" action="" method="post">
+        <section class="editable-fields">
           <div>
-            <label for="login-username">Username</label>
+            <label for="edit-profile-photo">Photo</label>
             <input class="form-control" id="login-username" type="text" name="loginUsername" value="" placeholder="Enter Username">
           </div>
 
@@ -28,8 +37,8 @@
             <button type="submit" name="loginSubmit">Login</button>
             <a class="button-alt" href="./home.php">Cancel</a>
           </div>
-        </form>
-      </div>
-    </section>
+        </section>
+      </form>
+    </div>
   </main>
 <?php include "components/footer.php"; ?>

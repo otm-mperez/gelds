@@ -553,14 +553,8 @@ body {
 main {
   clear: both;
   margin: 0 auto;
-  padding: 40px 0 60px;
   background: #FFFFFF;
-  position: relative;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  position: relative; }
   main:before {
     content: "";
     display: block;
@@ -574,7 +568,6 @@ main {
 
 article {
   width: 59.5%;
-  min-height: 800px;
   display: flex;
   flex-direction: column;
   padding-right: 6%; }
@@ -602,13 +595,29 @@ aside {
 hr {
   margin: -5px 0 25px; }
 
-.content-wrap, main, #top-header .content, #site-header .content, .site-nav, footer .pre .logo-links, footer .footer-links, footer .copyright, .container {
+.content-wrap, #top-header .content, #site-header .content, .site-nav, footer .pre .logo-links, footer .footer-links, footer .copyright, .container {
   position: relative;
   max-width: 1200px;
   margin: 0 auto; }
   @media screen and (max-width: 1200px) {
-    .content-wrap, main, #top-header .content, #site-header .content, .site-nav, footer .pre .logo-links, footer .footer-links, footer .copyright, .container {
+    .content-wrap, #top-header .content, #site-header .content, .site-nav, footer .pre .logo-links, footer .footer-links, footer .copyright, .container {
       margin: 0 15px; } }
+
+.content {
+  width: 100%;
+  /* full-width by default */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px; }
+  .content.centered {
+    text-align: center; }
+  .content.left {
+    text-align: left; }
+  @media (max-width: 960px) {
+    .content {
+      width: 90%; } }
+  .content.contained {
+    max-width: 800px; }
 
 .container {
   border: 1px solid #CCCCCC;
@@ -1093,16 +1102,36 @@ input, select {
 
 input[type="checkbox"] {
   display: inline-block;
-  width: auto; }
+  width: auto;
+  vertical-align: text-bottom; }
 
 label {
   font-family: "Gotham", sans-serif;
   font-weight: bold;
   color: #767676;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  vertical-align: text-bottom; }
 
 label + input {
   display: block; }
+
+form > div {
+  margin-bottom: 15px; }
+  form > div > span {
+    vertical-align: text-bottom; }
+
+form > small {
+  margin: -10px 0 20px;
+  display: block; }
+
+form header {
+  background: #144CA3;
+  color: #FFFFFF;
+  position: relative; }
+  form header .form-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
 
 .form-check-label {
   font-family: "Raleway", sans-serif;
@@ -1229,20 +1258,55 @@ nav li {
   #activities .attributes .value {
     color: #222222; }
 
-.activity-detail .attributes {
-  list-style: none;
-  padding: 0; }
+.activity-actions {
+  margin-bottom: 20px; }
 
-.activity-detail .key {
-  font-weight: bold;
-  font-family: "Gotham", sans-serif;
-  color: #002D72;
-  text-transform: uppercase;
-  margin-right: 10px;
-  width: 100px;
-  display: inline-block; }
+.activity-detail {
+  margin-top: 40px; }
+  .activity-detail .attributes {
+    list-style: none;
+    padding: 0; }
+  .activity-detail .key {
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
+    color: #002D72;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 100px;
+    display: inline-block; }
+  .activity-detail .value {
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
+    color: #767676; }
 
-.activity-detail .value {
-  font-weight: bold;
-  font-family: "Gotham", sans-serif;
-  color: #767676; }
+.cards {
+  list-style: none; }
+  .cards li {
+    border: 1px solid #ccc; }
+    .cards li:hover {
+      border-color: #2960B5; }
+  .cards a {
+    text-decoration: none;
+    color: #222222; }
+  .cards .para-title {
+    margin: 30px 0 10px;
+    color: #2960B5;
+    font-weight: bold; }
+
+.col-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0; }
+  .col-grid li {
+    width: 40%;
+    margin: 0 15px 30px; }
+    @media (max-width: 800px) {
+      .col-grid li {
+        width: 100%; } }
+  .col-grid a {
+    display: block;
+    padding: 30px; }
+
+.hero {
+  margin-bottom: 60px; }
