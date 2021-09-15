@@ -1,5 +1,5 @@
 <?php include "components/header.php"; ?>
-<main>
+<main style="margin-top:50px;">
   <div class="content">
     <h1 class="title">Navigation Links</h1><br />
 

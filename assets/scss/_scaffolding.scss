@@ -26,8 +26,6 @@ body {
 }
 main {
   @include clearfix;
-  // @extend .content-wrap;
-  // padding: 40px 0 60px;
   margin: 0 auto;
   background: $white;
   position: relative;
@@ -39,6 +37,12 @@ main {
 
   @media screen and (max-width: $tablet) {
     flex-direction: row-reverse;
+  }
+
+  &.has-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
   }
 
   img {
@@ -55,6 +59,7 @@ article {
   padding-right: 6%;
 
   @media screen and (max-width: $tablet) {
+    margin-top: 50px;
     width: 100%;
     padding: 0;
   }
@@ -66,8 +71,10 @@ aside {
   overflow: auto;
   position: -webkit-sticky;
   position: sticky;
-  top: calc(115px + 1.5%); //header height + padding
-  padding-top: 5px;
+  // top: calc(115px + 1.5%); //header height + padding
+  top: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 
   @media screen and (max-width: $tablet) {
     width: 100%;

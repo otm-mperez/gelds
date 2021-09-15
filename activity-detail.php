@@ -1,5 +1,5 @@
 <?php include "components/header.php"; ?>
-    <main>
+    <main class="has-sidebar">
       <article class="activity-detail">
         <section>
           <div class="content">

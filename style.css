@@ -562,6 +562,10 @@ main {
   @media screen and (max-width: 800px) {
     main {
       flex-direction: row-reverse; } }
+  main.has-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px; }
   main img {
     max-width: 100%;
     height: auto; }
@@ -573,6 +577,7 @@ article {
   padding-right: 6%; }
   @media screen and (max-width: 800px) {
     article {
+      margin-top: 50px;
       width: 100%;
       padding: 0; } }
 
@@ -583,8 +588,9 @@ aside {
   overflow: auto;
   position: -webkit-sticky;
   position: sticky;
-  top: calc(115px + 1.5%);
-  padding-top: 5px; }
+  top: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px; }
   @media screen and (max-width: 800px) {
     aside {
       width: 100%;
