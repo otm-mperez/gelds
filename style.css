@@ -626,13 +626,18 @@ hr {
     max-width: 800px; }
 
 .container {
-  border: 1px solid #CCCCCC;
-  padding: 30px;
+  padding: 0;
   margin: 30px auto;
   width: 500px; }
+  .container.no-padding {
+    padding: 0 !important; }
+  .container.padding {
+    padding: 30px !important; }
   @media (max-width: 560px) {
     .container {
-      width: 100%; } }
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px !important; } }
 
 .page-header {
   display: flex;
@@ -1121,23 +1126,42 @@ label {
 label + input {
   display: block; }
 
-form > div {
-  margin-bottom: 15px; }
-  form > div > span {
-    vertical-align: text-bottom; }
-
-form > small {
-  margin: -10px 0 20px;
-  display: block; }
-
-form header {
-  background: #144CA3;
-  color: #FFFFFF;
-  position: relative; }
-  form header .form-actions {
-    position: absolute;
-    top: 20px;
-    right: 20px; }
+main form {
+  border: 1px solid #CCCCCC; }
+  main form > div {
+    margin-bottom: 15px; }
+    main form > div > span {
+      vertical-align: text-bottom; }
+  main form > small {
+    margin: -10px 0 20px;
+    display: block; }
+  main form header {
+    background: #144CA3;
+    color: #FFFFFF;
+    position: relative;
+    padding: 20px; }
+    main form header .alt-title {
+      margin: 10px 0 -10px;
+      color: #fff; }
+    main form header .form-actions {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+      main form header .form-actions .video-tutorial {
+        margin-right: 10px;
+        text-decoration: none; }
+  main form section {
+    padding: 20px; }
+    main form section.non-editable-fields {
+      background: #eee;
+      border-bottom: 1px solid #ccc;
+      color: #676767; }
+      main form section.non-editable-fields .personal-info {
+        list-style: none;
+        padding: 5px 0; }
+      main form section.non-editable-fields .key {
+        font-weight: bold;
+        padding-right: 10px; }
 
 .form-check-label {
   font-family: "Raleway", sans-serif;
@@ -1227,6 +1251,12 @@ nav li {
   padding: 20px; }
   .link-list li {
     margin-bottom: 10px; }
+
+/* -------------------------------------------------------------------------- */
+/*  TABLES                                                                    */
+/* -------------------------------------------------------------------------- */
+td {
+  padding-right: 20px; }
 
 #activities a {
   text-decoration: none; }

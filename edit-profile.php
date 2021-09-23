@@ -12,29 +12,48 @@
         <section class="non-editable-fields">
           <p>GaPDS # <span class="account-number">00202105</span></p>
           <p><strong>To update this information, please login to your <a target="_blank" href="https://gapds.decal.ga.gov/Registration">GaPDS account</a></strong></p>
+          <ul class="personal-info">
+            <li>
+              <span class="key">First Name</span>
+              <span class="value">Marcie</span>
+            </li>
+            <li>
+              <span class="key">Last Name</span>
+              <span class="value">Singletary</span>
+            </li>
+            <li>
+              <span class="key">Email Address</span>
+              <span class="value">marcie.singletary@decal.ga.gov</span>
+            </li>
+          </ul>
+          <table class="employment-info">
+            <thead>
+              <tr>
+                <th>Employer(s)</th>
+                <th>Role(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Little Flower Childcare Service Centre</td>
+                <td>Registered Teacher</td>
+              </tr>
+              <tr>
+                <td>Capri Childcare Service Centre</td>
+                <td>Registered Teacher</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <section class="editable-fields">
           <div>
-            <label for="edit-profile-photo">Photo</label>
-            <input class="form-control" id="login-username" type="text" name="loginUsername" value="" placeholder="Enter Username">
-          </div>
-
-          <div>
-            <label for="login-password">Password</label>
-            <input class="form-control" id="login-password" type="password" name="loginPassword" value="" placeholder="Enter Password">
-          </div>
-
-          <small><a href="https://gapds.decal.ga.gov/ForgotLogin" target="_blank">Forgot login information?</a></small>
-
-          <div>
-            <input class="form-control" id="login-prek" type="checkbox" name="loginPrekDirectors" value="">
-            <label for="login-prek">Pre-K Directors</label>
-            <span>(Check to login with PANDA credentials)</span>
+            <label for="profile-photo">Photo</label>
+            <input class="form-control" type="file" id="profile-photo"  name="profilePhoto">
           </div>
 
           <div class="button-group">
-            <button type="submit" name="loginSubmit">Login</button>
+            <button type="submit" name="profileSubmit">Save</button>
             <a class="button-alt" href="./home.php">Cancel</a>
           </div>
         </section>

@@ -1,7 +1,7 @@
 <?php include "components/header.php"; ?>
   <main>
     <section>
-      <div class="container">
+      <div class="container padding">
         <h2 class="alt-title">Login</h2>
         <p>Use your GaPDS credentials to log in or <a target="_blank" href="https://gapds.decal.ga.gov/Registration">create an account</a></p>
 

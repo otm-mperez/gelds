@@ -28,7 +28,13 @@ label {
 label + input {
   display: block;
 }
-form {
+main form {
+  border: 1px solid $light-gray;
+
+  @media (max-width: $mobile) {
+    // padding: 20px;
+  }
+
   > div {
     margin-bottom: 15px;
 
@@ -45,11 +51,41 @@ form {
     background: $deep-blue;
     color: $white;
     position: relative;
+    padding: 20px;
+
+    .alt-title {
+      margin: 10px 0 -10px;
+      color: #fff;
+    }
 
     .form-actions {
       position: absolute;
       top: 20px;
       right: 20px;
+
+      .video-tutorial {
+        margin-right: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  section {
+    padding: 20px;
+
+    &.non-editable-fields {
+      background: #eee;
+      border-bottom: 1px solid #ccc;
+      color: #676767;
+
+      .personal-info {
+        list-style: none;
+        padding: 5px 0;
+      }
+      .key {
+        font-weight: bold;
+        padding-right: 10px;
+      }
     }
   }
 }

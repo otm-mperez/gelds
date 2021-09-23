@@ -119,13 +119,21 @@ hr {
   }
 }
 .container {
-  border: 1px solid $light-gray;
-  padding: 30px;
+  padding: 0;
   margin: 30px auto;
   width: 500px;
 
+  &.no-padding {
+    padding: 0 !important;
+  }
+  &.padding {
+    padding: 30px !important;
+  }
+
   @media (max-width: $mobile) {
     width: 100%;
+    margin: 0 auto;
+    padding: 20px !important;
   }
 }
 
