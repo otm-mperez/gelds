@@ -1128,6 +1128,8 @@ label + input {
 
 main form {
   border: 1px solid #CCCCCC; }
+  main form#login {
+    padding: 30px; }
   main form > div {
     margin-bottom: 15px; }
     main form > div > span {

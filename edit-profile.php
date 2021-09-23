@@ -1,7 +1,7 @@
 <?php include "components/header.php"; ?>
   <main>
     <div class="container">
-      <form id="login" action="" method="post">
+      <form id="edit-profile" action="" method="post">
         <header class="form-header">
           <h2 class="alt-title">Edit Profile</h2>
           <div class="form-actions">
