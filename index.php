@@ -14,6 +14,7 @@
       <li><a href="./home.php">Home</a></li>
       <li><a href="./login.php">Login</a></li>
       <li><a href="./edit-profile.php">Edit Profile</a></li>
+      <li><a href="./edit-profile-uploaded-photo.php">Edit Profile w/ Uploaded Photo</a></li>
       <li><a href="./resources.php">Resources</a></li>
       <li><a href="./activities.php">Activities</a></li>
       <li><a href="./activity-detail.php">Activities Detail</a></li>

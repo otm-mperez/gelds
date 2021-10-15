@@ -47,11 +47,6 @@
         </section>
 
         <section class="editable-fields">
-          <div class="photo-upload">
-            <label for="profile-photo">Photo</label>
-            <input class="form-control" type="file" id="profile-photo"  name="profilePhoto">
-          </div>
-
           <div class="uploaded">
             <a class="change-photo" href="#">Change Photo</a>
             <picture class="profile-photo">
