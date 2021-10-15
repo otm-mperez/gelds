@@ -52,10 +52,14 @@
             <input class="form-control" type="file" id="profile-photo"  name="profilePhoto">
           </div>
 
-          <div class="button-group">
-            <button type="submit" name="profileSubmit">Save</button>
-            <a class="button-alt" href="./home.php">Cancel</a>
+          <div class="uploaded">
+            <a class="change-photo" href="#">Change Photo</a>
+            <picture class="profile-photo">
+              <img src="assets/img/profile-marcie-singletary.jpg" alt="Profile photo">
+              <span class="remove-photo"><img src="assets/img/icon-remove.svg" alt="Remove profile photo"> </span>
+            </picture>
           </div>
+
         </section>
       </form>
     </div>
